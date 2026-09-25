@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local AI Bridge"
+  short_description: "Coordinate Codex and Claude on your own Windows PC"
+  default_prompt: "Use $local-ai-bridge to set up subscription-based teamwork between my local Codex and Claude Code installations."
