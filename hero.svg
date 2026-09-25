@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">Local AI Bridge — Your AI tools. One team.</title>
+  <desc id="desc">A local coordinator connects scoped Codex and Claude Code workers and an optional Notion board. Windows reference release using your own subscriptions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101d29"/><stop offset="1" stop-color="#09121b"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#69dfc5" stop-opacity=".12"/><stop offset="1" stop-color="#69dfc5" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9ec7dc" stroke-opacity=".035"/></pattern>
+    <linearGradient id="line"><stop stop-color="#69dfc5"/><stop offset="1" stop-color="#edb77e"/></linearGradient>
+  </defs>
+  <rect width="1280" height="560" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="560" rx="20" fill="url(#grid)"/>
+  <ellipse cx="1010" cy="220" rx="390" ry="340" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1278" height="558" rx="19" fill="none" stroke="#263746"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g transform="translate(60 48)" fill="none" stroke="#69dfc5" stroke-width="3">
+      <path d="M0 21V6a6 6 0 0 1 6-6h5M35 0h6a6 6 0 0 1 6 6v15M0 29v12a6 6 0 0 0 6 6h5M35 47h6a6 6 0 0 0 6-6V29"/>
+      <path d="M9 24h29M17 16l-8 8 8 8M30 16l8 8-8 8"/>
+    </g>
+    <text x="126" y="68" fill="#edf5f8" font-size="20" font-weight="700" letter-spacing="2">LOCAL AI BRIDGE</text>
+    <text x="126" y="92" fill="#91a9bb" font-size="13" letter-spacing="2">AN OPEN-SOURCE AGENT SKILL</text>
+    <rect x="1095" y="51" width="122" height="31" rx="15" fill="#172b32" stroke="#34534f"/>
+    <circle cx="1112" cy="67" r="3" fill="#69dfc5"/>
+    <text x="1125" y="72" fill="#b6dccf" font-size="12" font-weight="600">v0.1.0 / WIN</text>
+    <text x="58" y="203" fill="#f1f6fa" font-size="68" font-weight="700" letter-spacing="-3">Your AI tools.</text>
+    <text x="58" y="281" fill="#69dfc5" font-size="68" font-weight="700" letter-spacing="-3">One team.</text>
+    <text x="62" y="332" fill="#b8c9d5" font-size="20">Codex + Claude Code, working together</text>
+    <text x="62" y="362" fill="#b8c9d5" font-size="20">through a task bridge on your Windows PC.</text>
+    <g fill="none" stroke-width="2">
+      <path d="M944 220V245H793V280M944 245h151v35" stroke="url(#line)"/>
+      <path d="M944 245v153" stroke="#577387" stroke-dasharray="4 6"/>
+    </g>
+    <circle cx="944" cy="245" r="5" fill="#101d29" stroke="#91b9b0" stroke-width="2"/>
+    <rect x="807" y="139" width="275" height="81" rx="12" fill="#172833" stroke="#54727b"/>
+    <circle cx="835" cy="166" r="5" fill="#d9ecf1"/>
+    <text x="851" y="171" fill="#eff6fa" font-size="17" font-weight="600">Your coordinator</text>
+    <text x="830" y="198" fill="#9db5c3" font-size="13">Scope · Dispatch · Assess</text>
+    <rect x="679" y="280" width="227" height="92" rx="12" fill="#142d2d" stroke="#45796c"/>
+    <rect x="697" y="299" width="4" height="21" rx="2" fill="#69dfc5"/>
+    <text x="714" y="317" fill="#dffff5" font-size="20" font-weight="600">Codex</text>
+    <text x="699" y="346" fill="#9abbb3" font-size="13">Scoped worker session</text>
+    <rect x="982" y="280" width="227" height="92" rx="12" fill="#302924" stroke="#89674b"/>
+    <rect x="1000" y="299" width="4" height="21" rx="2" fill="#edb77e"/>
+    <text x="1017" y="317" fill="#ffe5c8" font-size="20" font-weight="600">Claude Code</text>
+    <text x="1002" y="346" fill="#c3ae99" font-size="13">Scoped worker session</text>
+    <rect x="836" y="398" width="218" height="42" rx="9" fill="#14212d" stroke="#3b5264" stroke-dasharray="4 4"/>
+    <g stroke="#90afc4" fill="none"><rect x="852" y="413" width="16" height="12" rx="2"/><path d="M857 413v12M863 413v12"/></g>
+    <text x="880" y="424" fill="#b6ccda" font-size="13">Notion · optional progress</text>
+    <path d="M62 470H1218" stroke="#2b3c49"/>
+    <circle cx="67" cy="508" r="4" fill="#69dfc5"/>
+    <text x="83" y="513" fill="#d6e5ec" font-size="14">Your subscriptions</text>
+    <circle cx="362" cy="508" r="4" fill="#edb77e"/>
+    <text x="378" y="513" fill="#d6e5ec" font-size="14">Isolated work · Independent review</text>
+    <text x="1217" y="513" fill="#7793a6" font-size="12" text-anchor="end" letter-spacing="1">LOCAL ORCHESTRATION / ONLINE MODELS</text>
+  </g>
+</svg>
