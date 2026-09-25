@@ -1,0 +1,10 @@
+{
+  "name": "local-ai-bridge-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Windows task queue for subscription-authenticated Codex and Claude workers",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test tests/*.test.mjs", "status": "node bridge.mjs status" }
+}

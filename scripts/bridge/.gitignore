@@ -1,0 +1,9 @@
+config.json
+notion-map.json
+.private/
+data/
+work/
+node_modules/
+*.log
+.env
+.env.*
