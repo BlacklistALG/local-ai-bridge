@@ -1,0 +1,16 @@
+# Recovery and limitations
+
+Inspect `show TASK_ID`, `list`, and `notion-status` in the private installation. Do not publish their raw output: local records can contain private task content and paths.
+
+- **Missing executables or unsupported flags:** use native .exe files and the provider's current documented CLI. Inspect the exact CLI help. The adapter fails closed when required features are absent; do not replace its sandbox with full access. Re-run a bounded probe after a relevant change.
+- **Authentication or usage limits:** use the provider's supported subscription sign-in. Keep paid continuation/extra usage off. Pause at quota limits; do not purchase/reset credits or route through API keys. Existing user-approved Windows sandbox setup may be needed before Codex can run.
+- **Git unavailable:** this version discovers Git in standard Git for Windows locations (Program Files or LocalAppData/Programs). A custom Git installation requires adapting discovery and testing it. Do not assume bundled Git inside an unrelated app is available.
+- **Worker interruption:** affected providers pause. Confirm the recorded worker processes have stopped before `reconcile --provider codex --confirmed-stopped` (or `claude`). This leaves the job blocked for inspection; it does not resume or accept it. Do not use reconciliation merely to clear a warning.
+- **Stale queue/sync locks:** inspect the specific lock owner and confirm that process has exited before repairing only that stale lock. Never delete the queue, mappings, or credential directory as a generic fix.
+- **Failed tests/out-of-scope edits:** inspect the worktree. Tests may create ignored artifacts which are still outside the authorized scope. Fix the task or registered test behavior, validate the exact revised patch, and obtain a fresh independent review. Do not mark it Done manually.
+- **Integration interrupted:** if integrationInProgress or INTEGRATION_RECOVERY_REQUIRED remains, inspect source history, patch hash, and task ID. A commit may already have succeeded. Do not blindly repeat integration, reset the project, or clear the marker.
+- **Notion errors:** the local job is preserved. Reconnect expired/revoked access through the bridge's own login. Check the board schema and unfiltered recovery view. Resolve duplicate Local task IDs explicitly. An uncertain card creation is reconciled before another attempt; never clear its pending record without inspecting the board.
+
+Runtime configuration and the queue are trusted local state. Anyone who can change them can redirect commands or scopes. Provider tool restrictions and path checks are not a full VM boundary. Registered tests execute project code under the current user. The project is a reference implementation for trusted local use, not a multi-user service exposed to the internet.
+
+Windows is the supported platform for this release. macOS/Linux credential storage and termination behavior have not been release-validated. Grok is an optional entry assistant through its actual local command access; it is not a bundled worker adapter. No always-on planner, automatic rebasing, production deployment, background model scheduler, or cross-chat shared memory is included.
