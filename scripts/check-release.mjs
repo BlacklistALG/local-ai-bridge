@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const issues = [];
 const files = [];
-const allowed = /^(?:SKILL\.md|README\.md|VALIDATION\.md|LICENSE|\.gitignore|agents\/openai\.yaml|references\/[a-z-]+\.md|scripts\/(?:setup\.mjs|setup\.test\.mjs|check-release\.mjs)|scripts\/bridge\/(?:bridge\.mjs|package\.json|\.gitignore|(?:lib|tests|scripts)\/[^/]+\.mjs))$/;
+const allowed = /^(?:SKILL\.md|README\.md|VALIDATION\.md|LICENSE|\.gitignore|hero\.svg|agents\/openai\.yaml|references\/[a-z-]+\.md|scripts\/(?:setup\.mjs|setup\.test\.mjs|check-release\.mjs)|scripts\/bridge\/(?:bridge\.mjs|package\.json|\.gitignore|(?:lib|tests|scripts)\/[^/]+\.mjs))$/;
 async function scan(folder, prefix = '') {
   for (const entry of await readdir(folder, { withFileTypes: true })) {
     if (entry.name === '.git' && entry.isDirectory() && !prefix) continue;
